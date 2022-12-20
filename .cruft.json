@@ -1,0 +1,27 @@
+{
+  "template": "https://github.com/linkml/linkml-project-cookiecutter",
+  "commit": "c917617feee59d5cd10d65666e8fd975a969444d",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "ess-dive-linkml-playground",
+      "__project_slug": "ess_dive_linkml_playground",
+      "github_org": "turbomam",
+      "__source_path": "src/ess_dive_linkml_playground/schema/ess_dive_linkml_playground.yaml",
+      "project_description": "This is a collaborative repo for exploring schema creation and data validation for ESS-DIVE, using LinkML",
+      "full_name": "Mark Andrew Miller",
+      "email": "mam@lbl.gov",
+      "__author": "Mark Andrew Miller <mam@lbl.gov>",
+      "license": "BSD-3",
+      "main_schema_class": "Person",
+      "create_python_classes": "Yes",
+      "use_schemasheets": "No",
+      "google_sheet_id": "1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ",
+      "google_sheet_tabs": "personinfo enums",
+      "__google_sheet_module": "personinfo_enums",
+      "github_token_for_pypi_deployment": "PYPI_PASSWORD",
+      "_template": "https://github.com/linkml/linkml-project-cookiecutter"
+    }
+  },
+  "directory": null
+}
