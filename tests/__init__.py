@@ -1,0 +1,1 @@
+"""Tests for ess-dive-linkml-playground."""

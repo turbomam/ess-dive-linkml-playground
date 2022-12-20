@@ -1,0 +1,6 @@
+name: ess_dive_linkml_playground
+author: Mark Andrew Miller <mam@lbl.gov>
+description: This is a collaborative repo for exploring schema creation and data validation for ESS-DIVE, using LinkML
+source_schema_path: src/ess_dive_linkml_playground/schema/ess_dive_linkml_playground.yaml
+google_sheet_id: 1wVoaiFg47aT9YWNeRfTZ8tYHN8s8PAuDx5i2HUcDpvQ
+google_sheet_tabs: personinfo enums
