@@ -200,7 +200,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="class-observation">Class: Observation</h1>
-<p>URI: <a href="https://w3id.org/MySchemaObservation">MySchema:Observation</a></p>
+<p>URI: <a href="https://example.com/ess-dive-linkml-playgroundObservation">playground:Observation</a></p>
 <div class="mermaid"> classDiagram
     class Observation
       Observation : basin3d_id
@@ -269,7 +269,7 @@
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
-<li>from schema: https://w3id.org/MySchema</li>
+<li>from schema: https://w3id.org/ess-dive-linkml-playground</li>
 </ul>
 <h2 id="mappings">Mappings</h2>
 <table>
@@ -282,11 +282,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>MySchema:Observation</td>
+<td>playground:Observation</td>
 </tr>
 <tr>
 <td>native</td>
-<td>MySchema:Observation</td>
+<td>playground:Observation</td>
 </tr>
 </tbody>
 </table>
@@ -295,7 +295,7 @@
 <h3 id="direct">Direct</h3>
 <details>
 <pre><code class="language-yaml">name: Observation
-from_schema: https://w3id.org/MySchema
+from_schema: https://w3id.org/ess-dive-linkml-playground
 rank: 1000
 slots:
 - basin3d_id
@@ -308,14 +308,14 @@ slots:
 <h3 id="induced">Induced</h3>
 <details>
 <pre><code class="language-yaml">name: Observation
-from_schema: https://w3id.org/MySchema
+from_schema: https://w3id.org/ess-dive-linkml-playground
 rank: 1000
 attributes:
   basin3d_id:
     name: basin3d_id
     examples:
     - value: NDVI
-    from_schema: https://w3id.org/MySchema
+    from_schema: https://w3id.org/ess-dive-linkml-playground
     rank: 1000
     identifier: true
     alias: basin3d_id
@@ -327,7 +327,7 @@ attributes:
     name: description
     examples:
     - value: Normalized Difference Vegetation Index (NDVI)
-    from_schema: https://w3id.org/MySchema
+    from_schema: https://w3id.org/ess-dive-linkml-playground
     rank: 1000
     alias: description
     owner: Observation
@@ -338,7 +338,7 @@ attributes:
     name: categories
     examples:
     - value: Remote Sensing
-    from_schema: https://w3id.org/MySchema
+    from_schema: https://w3id.org/ess-dive-linkml-playground
     rank: 1000
     alias: categories
     owner: Observation
@@ -349,7 +349,7 @@ attributes:
     name: units
     examples:
     - value: m
-    from_schema: https://w3id.org/MySchema
+    from_schema: https://w3id.org/ess-dive-linkml-playground
     rank: 1000
     alias: units
     owner: Observation
