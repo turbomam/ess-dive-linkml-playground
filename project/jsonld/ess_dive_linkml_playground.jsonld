@@ -320,7 +320,7 @@
   "source_file": "ess_dive_linkml_playground.yaml",
   "source_file_date": "2022-12-19T20:44:06",
   "source_file_size": 961,
-  "generation_date": "2022-12-19T20:45:24",
+  "generation_date": "2022-12-19T20:54:54",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/ess_dive_linkml_playground.context.jsonld",

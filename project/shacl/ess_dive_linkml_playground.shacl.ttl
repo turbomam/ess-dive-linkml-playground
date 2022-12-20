@@ -16,16 +16,16 @@ playground:Observation a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:maxCount 1 ;
-            sh:order 3 ;
-            sh:path playground:units ],
+            sh:order 1 ;
+            sh:path playground:description ],
         [ sh:maxCount 1 ;
             sh:order 2 ;
             sh:path playground:categories ],
         [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path playground:description ],
-        [ sh:maxCount 1 ;
             sh:order 0 ;
-            sh:path playground:basin3d_id ] ;
+            sh:path playground:basin3d_id ],
+        [ sh:maxCount 1 ;
+            sh:order 3 ;
+            sh:path playground:units ] ;
     sh:targetClass playground:Observation .
 

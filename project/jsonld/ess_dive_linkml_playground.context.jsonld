@@ -1,5 +1,5 @@
 {
-   "_comments": "Auto generated from ess_dive_linkml_playground.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-12-19T20:45:23\n    Schema: ess-dive-linkml-playground\n    metamodel version: 1.7.0\n    model version: None\n    \n    id: https://w3id.org/ess-dive-linkml-playground\n    description: This is a collaborative repo for exploring schema creation and data validation for ESS-DIVE, using LinkML\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "_comments": "Auto generated from ess_dive_linkml_playground.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-12-19T20:54:54\n    Schema: ess-dive-linkml-playground\n    metamodel version: 1.7.0\n    model version: None\n    \n    id: https://w3id.org/ess-dive-linkml-playground\n    description: This is a collaborative repo for exploring schema creation and data validation for ESS-DIVE, using LinkML\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
    "@context": {
       "linkml": "https://w3id.org/linkml/",
       "playground": {
