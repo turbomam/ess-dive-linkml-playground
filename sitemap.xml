@@ -11,17 +11,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/MySchema/</loc>
-         <lastmod>2022-12-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://turbomam.github.io/ess-dive-linkml-playground/Observation/</loc>
-         <lastmod>2022-12-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/about/</loc>
          <lastmod>2022-12-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
