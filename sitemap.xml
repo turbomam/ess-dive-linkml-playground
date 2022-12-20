@@ -6,32 +6,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/NamedThing/</loc>
+         <loc>https://turbomam.github.io/ess-dive-linkml-playground/MySchema/</loc>
          <lastmod>2022-12-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/Person/</loc>
+         <loc>https://turbomam.github.io/ess-dive-linkml-playground/Observation/</loc>
          <lastmod>2022-12-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/PersonCollection/</loc>
+         <loc>https://turbomam.github.io/ess-dive-linkml-playground/about/</loc>
          <lastmod>2022-12-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/PersonStatus/</loc>
+         <loc>https://turbomam.github.io/ess-dive-linkml-playground/basin3d_id/</loc>
          <lastmod>2022-12-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/age_in_years/</loc>
-         <lastmod>2022-12-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/birth_date/</loc>
+         <loc>https://turbomam.github.io/ess-dive-linkml-playground/categories/</loc>
          <lastmod>2022-12-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -41,37 +36,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/entries/</loc>
-         <lastmod>2022-12-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/ess-dive-linkml-playground/</loc>
-         <lastmod>2022-12-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/id/</loc>
-         <lastmod>2022-12-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/name/</loc>
-         <lastmod>2022-12-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/primary_email/</loc>
-         <lastmod>2022-12-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://turbomam.github.io/ess-dive-linkml-playground/types/</loc>
          <lastmod>2022-12-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://turbomam.github.io/ess-dive-linkml-playground/vital_status/</loc>
+         <loc>https://turbomam.github.io/ess-dive-linkml-playground/units/</loc>
          <lastmod>2022-12-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
