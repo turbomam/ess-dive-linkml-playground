@@ -1,0 +1,634 @@
+observation_list:
+- basin3d_id: ACT
+  description: Acetate (CH3COO)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: Br
+  description: Bromide (Br)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: Cl
+  description: Chloride (Cl)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: DIN
+  description: Dissolved Inorganic Nitrogen (Nitrate + Nitrite)
+  categories: Biogeochemistry,Anions
+  units: mg/L
+- basin3d_id: DTN
+  description: Dissolved Total Nitrogen (DTN)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: F
+  description: Fluoride (F)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: NO3
+  description: Nitrate (NO3)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: NO2
+  description: Nitrite (NO2)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: PO4
+  description: Phosphate (PO4)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: SO4
+  description: Sulfate (SO4)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: S2
+  description: Sulfide (S)
+  categories: Biogeochemistry,Anions
+  units: mM
+- basin3d_id: S2O3
+  description: Thiosulfate (S2O3)
+  categories: Biogeochemistry,Anions
+  units: mg/L
+- basin3d_id: HCO3
+  description: Bicarbonate
+  categories: Biogeochemistry,Carbon
+  units: mg/L
+- basin3d_id: DIC
+  description: Dissolved Inorganic C (DIC)
+  categories: Biogeochemistry,Carbon
+  units: mg/L
+- basin3d_id: DOC
+  description: Dissolved Organic Carbon (DOC)
+  categories: Biogeochemistry,Carbon
+  units: mg/L
+- basin3d_id: NPOC
+  description: Non-Purgable Organic Carbon (NPOC)
+  categories: Biogeochemistry,Carbon
+  units: mg/L
+- basin3d_id: POC
+  description: Particulate Organic C (POC)
+  categories: Biogeochemistry,Carbon
+  units: mg/L
+- basin3d_id: TIC
+  description: Total Inorganic Carbon (TIC)
+  categories: Biogeochemistry,Carbon
+  units: mg/L
+- basin3d_id: TOC
+  description: Total Organic Carbon (TOC)
+  categories: Biogeochemistry,Carbon
+  units: mg/L
+- basin3d_id: d13C
+  description: Carbon (d13C)
+  categories: Biogeochemistry,Isotopes
+  units: per mil
+- basin3d_id: CO2_d13C_soilgas
+  description: Carbon in Carbon Dioxide soil gas (CO2-d13C)
+  categories: Biogeochemistry,Isotopes
+  units: per mil
+- basin3d_id: CH4_d13C_soilgas
+  description: Carbon in Methane soil gas (CH4-d13C)
+  categories: Biogeochemistry,Isotopes
+  units: per mil
+- basin3d_id: d15N
+  description: Nitrogen in Air (Air-d15N)
+  categories: Biogeochemistry,Isotopes
+  units: per mil
+- basin3d_id: N2O_d15N_soilgas
+  description: Nitrogen in Nitrous Oxide soil gas (N2O-d15N)
+  categories: Biogeochemistry,Isotopes
+  units: per mil
+- basin3d_id: CO2_d18O_soilgas
+  description: Oxygen in Carbon Dioxide soil gas (CO2-d18O)
+  categories: Biogeochemistry,Isotopes
+  units: per mil
+- basin3d_id: N2O_d18O_soilgas
+  description: Oxygen in Nitrous Oxide soil gas (N2O-d18O)
+  categories: Biogeochemistry,Isotopes
+  units: per mil
+- basin3d_id: SO4_d34S
+  description: Sulfur in Sulfate (SO4-d34S)
+  categories: Biogeochemistry,Isotopes
+  units: per mil
+- basin3d_id: U235
+  description: Uranium (U235)
+  categories: Biogeochemistry,Isotopes
+  units: mg/L
+- basin3d_id: H2O_d18O
+  description: Water - d18O
+  categories: Biogeochemistry,Isotopes
+  units: mg/L
+- basin3d_id: H2O_dD
+  description: Water - Deuterium (dD)
+  categories: Biogeochemistry,Isotopes
+  units: mg/L
+- basin3d_id: NH4
+  description: Ammonium (NH4)
+  categories: Biogeochemistry,Major Cations
+  units: mg/L
+- basin3d_id: Ca
+  description: Calcium (Ca)
+  categories: Biogeochemistry,Major Cations
+  units: mg/L
+- basin3d_id: Mg
+  description: Magnesium (Mg)
+  categories: Biogeochemistry,Major Cations
+  units: mg/L
+- basin3d_id: K
+  description: Potassium (K)
+  categories: Biogeochemistry,Major Cations
+  units: mg/L
+- basin3d_id: Si
+  description: Silicon (Si)
+  categories: Biogeochemistry,Major Cations
+  units: mg/L
+- basin3d_id: Na
+  description: Sodium (Na)
+  categories: Biogeochemistry,Major Cations
+  units: mg/L
+- basin3d_id: MICRO_COV
+  description: Coverage / Relative Abundance
+  categories: Biogeochemistry,Microbiology
+- basin3d_id: MGO1
+  description: Coverage- Organisms in O2 Injection Experiment (0.1 um filter)
+  categories: Biogeochemistry,Microbiology
+- basin3d_id: MGO2
+  description: Coverage- Organisms in O2 Injection Experiment (0.2 um filter)
+  categories: Biogeochemistry,Microbiology
+- basin3d_id: MGO3
+  description: Coverage- Organisms in O2 Injection Experiment (1.2 um filter)
+  categories: Biogeochemistry,Microbiology
+- basin3d_id: GENE_TRAN
+  description: Gene Expression from Transcriptomics
+  categories: Biogeochemistry,Microbiology
+- basin3d_id: MICRO_PEP
+  description: Peptide Counts
+  categories: Biogeochemistry,Microbiology
+- basin3d_id: MICRO_PLFA
+  description: Phosph Lipid Analysis
+  categories: Biogeochemistry,Microbiology
+- basin3d_id: NH3
+  description: Ammonia (NH3)
+  categories: Biogeochemistry,Soil Gases
+  units: mg/L
+- basin3d_id: CO2
+  description: Carbon Dioxide (CO2)
+  categories: Biogeochemistry,Soil Gases
+  units: mg/L
+- basin3d_id: H2
+  description: Hydrogen (H2)
+  categories: Biogeochemistry,Soil Gases
+  units: mg/L
+- basin3d_id: H2S
+  description: Hydrogen Sulfide (H2S)
+  categories: Biogeochemistry,Soil Gases
+  units: mg/L
+- basin3d_id: CH4
+  description: Methane (CH4)
+  categories: Biogeochemistry,Soil Gases
+  units: mg/L
+- basin3d_id: N2
+  description: Nitrogen (N2)
+  categories: Biogeochemistry,Soil Gases
+  units: mg/L
+- basin3d_id: N2O
+  description: Nitrous Oxide (N2O)
+  categories: Biogeochemistry,Soil Gases
+  units: mg/L
+- basin3d_id: O2
+  description: Oxygen (O2)
+  categories: Biogeochemistry,Soil Gases
+  units: mg/L
+- basin3d_id: Al
+  description: Aluminum (Al)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Sb
+  description: Antimony (Sb)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: As
+  description: Arsenic (As)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Ba
+  description: Barium (Ba)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Be
+  description: Beryllium (Be)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: B
+  description: Boron (B)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Cd
+  description: Cadmium (Cd)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Cs
+  description: Cesium (Cs)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Co
+  description: Cobalt (Co)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Cu
+  description: Copper (Cu)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Eu
+  description: Europium (Eu)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Ge
+  description: Germanium (Ge)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Fe2
+  description: Iron (II) (Fe2)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Hg
+  description: Mercury (Hg)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Pb
+  description: Lead (Pb)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Li
+  description: Lithium (Li)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Mn2
+  description: Manganese (II) (Mn2)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Mo
+  description: Molybdenum (Mo)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Ni
+  description: Nickel (Ni)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Rb
+  description: Rubidium (Rb)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Se
+  description: Selenium (Se)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Ag
+  description: Silver (Ag)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Sr
+  description: Strontium (Sr)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Th
+  description: Thorium (Th)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Sn
+  description: Tin (Sn)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Ti
+  description: Titanium (Ti)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Cr
+  description: Total Chromium (Cr)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: FeT
+  description: Total Iron (Fe)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Mn
+  description: Total Manganese (Mn)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: P
+  description: Total Phosphorous (P)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: U
+  description: Uranium (U)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: V
+  description: Vanadium (V)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Zn
+  description: Zinc (Zn)
+  categories: Biogeochemistry,Trace elements
+  units: mg/L
+- basin3d_id: Zr
+  description: Zirconium (Zr)
+  categories: Biogeochemistry,Trace elements
+- basin3d_id: AT
+  description: Air Temperature
+  categories: Climate,Weather
+  units: C
+- basin3d_id: ALB
+  description: Albedo
+  categories: Climate,Weather
+- basin3d_id: APA
+  description: Atmospheric Pressure (Absolute)
+  categories: Climate,Weather
+  units: mm Hg
+- basin3d_id: APR
+  description: Atmospheric Pressure (Relative to Sea Level)
+  categories: Climate,Weather
+  units: mm Hg
+- basin3d_id: DP
+  description: Dewpoint
+  categories: Climate,Weather
+  units: F
+- basin3d_id: ET
+  description: Evapotranspiration
+  categories: Climate,Weather
+- basin3d_id: HI
+  description: Heat Index
+  categories: Climate,Weather
+  units: F
+- basin3d_id: PPT
+  description: Precipitation (Instantaneous)
+  categories: Climate,Weather
+  units: mm
+- basin3d_id: PPT_TOT_5
+  description: Precipitation Accumulation (5 min interval)
+  categories: Climate,Weather
+  units: mm/5 min
+- basin3d_id: PPT_TOT_10
+  description: Precipitation Accumulation (10 min interval)
+  categories: Climate,Weather
+  units: mm/10 min
+- basin3d_id: PPT_TOT_60
+  description: Precipitation Accumulation (1 hr interval)
+  categories: Climate,Weather
+  units: mm/hr
+- basin3d_id: PPT_TOT_DAY
+  description: Daily Precipitation Accumulation/ Total Daily Rainfall
+  categories: Climate,Weather
+  units: mm
+- basin3d_id: UV_IN
+  description: Incoming Ultraviolet Radiation
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: UV_REF
+  description: Reflected Ultraviolet Radiation
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: NIR_IN
+  description: Near Infrared Incoming Radiation
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: NIR_REF
+  description: Near Infrared Reflected Radiation
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: PAR_IN
+  description: Incoming PAR
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: PAR_REF
+  description: Reflected PAR
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: LWIR_IN
+  description: Incoming Longwave Infrared Radiation
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: LWIR_REF
+  description: Reflected Longwave Infrared Radiation
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: BB_IN
+  description: Incoming Broadband Radiation
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: BB_REF
+  description: Reflected Broadband Radiation
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: RH
+  description: Relative Humidity
+  categories: Climate,Weather
+- basin3d_id: SD
+  description: Snow Depth
+  categories: Hydrogeology, Snow
+  units: m
+- basin3d_id: SWE
+  description: Snow Water Equivalent
+  categories: Hydrogeology, Snow
+- basin3d_id: SDEN
+  description: Snow Density
+  categories: Hydrogeology, Snow
+- basin3d_id: ST
+  description: Snow Temperature
+  categories: Hydrogeology, Snow
+- basin3d_id: PPT_SF
+  description: Snowfall
+  categories: Climate,Weather
+  units: mm
+- basin3d_id: SRAD
+  description: Solar Radiation
+  categories: Climate,Weather
+  units: W/m2
+- basin3d_id: WBT
+  description: Wetbulb Temperature
+  categories: Climate,Weather
+  units: F
+- basin3d_id: W_DIR
+  description: Wind Direction
+  categories: Climate,Weather
+  units: degrees
+- basin3d_id: W_GS
+  description: Wind Gust Speed
+  categories: Climate,Weather
+  units: mph
+- basin3d_id: W_SPD
+  description: Wind Speed
+  categories: Climate,Weather
+  units: mph
+- basin3d_id: W_CH
+  description: Windchill
+  categories: Climate,Weather
+  units: F
+- basin3d_id: ERT
+  description: ERT Time lapse data
+  categories: Hydrogeology,Geophysics
+- basin3d_id: CEC
+  description: Cation Exchange Capacity (CEC)
+  categories: Hydrogeology,Mineralogy
+  units: meq/100 g
+- basin3d_id: EXAFS
+  description: EXAFS
+  categories: Hydrogeology,Mineralogy
+- basin3d_id: SEQ
+  description: Solid Phase Sequential/Selective Extractions
+  categories: Hydrogeology,Mineralogy
+- basin3d_id: XRD
+  description: X-ray Diffraction (XRD)
+  categories: Hydrogeology,Mineralogy
+- basin3d_id: XRF
+  description: X-ray Fluorescence (XRF)
+  categories: Hydrogeology,Mineralogy
+- basin3d_id: XANES
+  description: XANES
+  categories: Hydrogeology,Mineralogy
+- basin3d_id: HCND
+  description: Hydraulic Conductivity
+  categories: Hydrogeology,Physical
+  units: m/day
+- basin3d_id: SED_SIZE
+  description: Particle size distribution
+  categories: Hydrogeology,Physical
+- basin3d_id: HCND_Sat
+  description: Permeability/Saturated hydraulic conductivity
+  categories: Hydrogeology,Physical
+  units: m/day
+- basin3d_id: Porosity
+  description: Porosity
+  categories: Hydrogeology,Physical
+- basin3d_id: SBD
+  description: Soil/Sediment Bulk Density
+  categories: Hydrogeology,Physical
+  units: g/cc
+- basin3d_id: SYD
+  description: Specific Yield
+  categories: Hydrogeology,Physical
+- basin3d_id: HCND_Unsat
+  description: Unsaturated Hydraulic Conductivity
+  categories: Hydrogeology,Physical
+  units: m/day
+- basin3d_id: RET_CUR
+  description: Water retention curves
+  categories: Hydrogeology,Physical
+- basin3d_id: LSE
+  description: Land Surface Elevation
+  categories: Hydrogeology/surface
+- basin3d_id: GWF
+  description: Groundwater Flux
+  categories: Hydrogeology,Subsurface
+- basin3d_id: Well logs
+  description: Lithological columns borehole information
+  categories: Hydrogeology,Subsurface
+- basin3d_id: SAT
+  description: Saturation (Neutron Probe)
+  categories: Hydrogeology,Subsurface
+- basin3d_id: SDE
+  description: Soil Dielectric Constant
+  categories: Hydrogeology,Subsurface
+  units: unitless
+- basin3d_id: SMO
+  description: Soil Moisture
+  categories: Hydrogeology,Subsurface
+- basin3d_id: STM
+  description: Soil Temperature
+  categories: Hydrogeology,Subsurface
+  units: C
+- basin3d_id: SWP
+  description: Soil Water Potential/Tensiometer Head
+  categories: Hydrogeology,Subsurface
+- basin3d_id: SEC
+  description: Soil Electrical Conductivity
+  categories: Hydrogeology,Subsurface
+  units: uS/cm
+- basin3d_id: FDOM
+  description: Colored Dissolved Organic Matter (FDOM)
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: QSU
+- basin3d_id: DO
+  description: Dissolved Oxygen (DO)
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: mg/L
+- basin3d_id: EC
+  description: Electrical Conductivity (EC)
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: uS/cm
+- basin3d_id: SC
+  description: Specific Conductance (SC)
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: uS/cm
+- basin3d_id: SAL
+  description: 'Salinity '
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: PSU
+- basin3d_id: GWL
+  description: Ground Water Level
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: m bgs
+- basin3d_id: PH
+  description: pH
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: m bgs
+- basin3d_id: ORP
+  description: Redox Potential (ORP)
+  categories: Hydrogeology,Water Physical/Quality Parameters
+- basin3d_id: RDC
+  description: River Discharge
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: mV
+- basin3d_id: SWL
+  description: Surface Water Level/ River Stage
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: m2/s
+- basin3d_id: WLH
+  description: Water Level Head (Height of Water Column)
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: m
+- basin3d_id: WLE
+  description: Water Level Elevation
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: m
+- basin3d_id: WT
+  description: Water Temperature
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: C
+- basin3d_id: TDS
+  description: Total Dissolved Solids (TDS)
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: mg/L
+- basin3d_id: TSS
+  description: Total Suspended Solids (TSS)
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: mg/L
+- basin3d_id: TRB
+  description: Turbidity
+  categories: Hydrogeology,Water Physical/Quality Parameters
+  units: NTU
+- basin3d_id: STO_RES
+  description: Stomatal resistance parameters
+  categories: Vegetation, Hydraulic Traits
+- basin3d_id: LAI
+  description: Leaf Area Index
+  categories: Vegetation, Plant Traits
+- basin3d_id: PLT_HT
+  description: Canopy/plant Height
+  categories: Vegetation,Plant Traits
+  units: m
+- basin3d_id: PAI
+  description: Plant Area Index
+  categories: Vegetation,Plant Traits
+- basin3d_id: PFT
+  description: Plant functional types
+  categories: Vegetation,Plant Traits
+- basin3d_id: SAP
+  description: Sap Flow
+  categories: Vegetation,Plant Response
+- basin3d_id: RGB
+  description: RGB pixel color values in an image
+  categories: Remote Sensing
+- basin3d_id: GCC
+  description: Green Chromatic Coordinate
+  categories: Remote Sensing
+- basin3d_id: NDVI
+  description: Normalized Difference Vegetation Index (NDVI)
+  categories: Remote Sensing

@@ -11,7 +11,7 @@
     IAO:0000700 playground:Container,
         playground:Observation ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
-    linkml:generation_date "2022-12-19T20:44:44" ;
+    linkml:generation_date "2022-12-19T20:45:27" ;
     linkml:metamodel_version "1.7.0" ;
     linkml:source_file "ess_dive_linkml_playground.yaml" ;
     linkml:source_file_date "2022-12-19T20:44:06" ;
@@ -69,6 +69,10 @@ playground:Observation a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Observation" ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty playground:categories ],
+        [ a owl:Restriction ;
             owl:onClass linkml:String ;
             owl:onProperty playground:basin3d_id ;
             owl:qualifiedCardinality 1 ],
@@ -79,11 +83,7 @@ playground:Observation a owl:Class,
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty playground:units ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass linkml:String ;
-            owl:onProperty playground:categories ] .
+            owl:onProperty playground:units ] .
 
 linkml:SlotDefinition a owl:Class ;
     rdfs:label "slot_definition" .

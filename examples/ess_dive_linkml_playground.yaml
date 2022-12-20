@@ -1,0 +1,39 @@
+name: MySchema
+description: MySchema
+id: https://w3id.org/MySchema
+imports:
+- linkml:types
+prefixes:
+  linkml: https://w3id.org/linkml/
+  MySchema: https://w3id.org/MySchema
+default_prefix: MySchema
+slots:
+  basin3d_id:
+    examples:
+    - value: NDVI
+    identifier: true
+    range: string
+  description:
+    examples:
+    - value: Normalized Difference Vegetation Index (NDVI)
+    range: string
+  categories:
+    examples:
+    - value: Remote Sensing
+    range: string
+  units:
+    examples:
+    - value: m
+    range: string
+classes:
+  Observation:
+    slots:
+    - basin3d_id
+    - description
+    - categories
+    - units
+    unique_keys:
+      description_key:
+        unique_key_name: description_key
+        unique_key_slots:
+        - description
