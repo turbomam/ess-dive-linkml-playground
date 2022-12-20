@@ -1,4 +1,4 @@
-BASE <https://w3id.org/MySchema/>
+BASE <https://example.com/ess-dive-linkml-playground/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX linkml: <https://w3id.org/linkml/>
@@ -34,19 +34,21 @@ linkml:Objectidentifier IRI
 
 linkml:Nodeidentifier NONLITERAL
 
-<https://w3id.org/MySchemaContainer> CLOSED {
-    (  $<https://w3id.org/MySchemaContainer_tes> <https://w3id.org/MySchemaobservation_list>
-       @<https://w3id.org/MySchemaObservation> * ;
-       rdf:type [ <https://w3id.org/MySchemaContainer> ] ?
+<https://example.com/ess-dive-linkml-playgroundContainer> CLOSED {
+    (  $<https://example.com/ess-dive-linkml-playgroundContainer_tes>
+       <https://example.com/ess-dive-linkml-playgroundobservation_list>
+       @<https://example.com/ess-dive-linkml-playgroundObservation> * ;
+       rdf:type [ <https://example.com/ess-dive-linkml-playgroundContainer> ] ?
     )
 }
 
-<https://w3id.org/MySchemaObservation> CLOSED {
-    (  $<https://w3id.org/MySchemaObservation_tes> (  <https://w3id.org/MySchemadescription> @linkml:String ? ;
-          <https://w3id.org/MySchemacategories> @linkml:String ? ;
-          <https://w3id.org/MySchemaunits> @linkml:String ?
+<https://example.com/ess-dive-linkml-playgroundObservation> CLOSED {
+    (  $<https://example.com/ess-dive-linkml-playgroundObservation_tes> ( 
+          <https://example.com/ess-dive-linkml-playgrounddescription> @linkml:String ? ;
+          <https://example.com/ess-dive-linkml-playgroundcategories> @linkml:String ? ;
+          <https://example.com/ess-dive-linkml-playgroundunits> @linkml:String ?
        ) ;
-       rdf:type [ <https://w3id.org/MySchemaObservation> ]
+       rdf:type [ <https://example.com/ess-dive-linkml-playgroundObservation> ]
     )
 }
 

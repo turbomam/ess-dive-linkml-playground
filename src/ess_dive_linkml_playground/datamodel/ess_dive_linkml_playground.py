@@ -1,9 +1,10 @@
 # Auto generated from ess_dive_linkml_playground.yaml by pythongen.py version: 0.9.0
-# Generation date: 2022-12-19T20:37:16
-# Schema: MySchema
+# Generation date: 2022-12-19T20:44:46
+# Schema: ess-dive-linkml-playground
 #
-# id: https://w3id.org/MySchema
-# description: MySchema
+# id: https://w3id.org/ess-dive-linkml-playground
+# description: This is a collaborative repo for exploring schema creation and data validation for ESS-DIVE, using
+#              LinkML
 # license: https://creativecommons.org/publicdomain/zero/1.0/
 
 import dataclasses
@@ -31,9 +32,9 @@ version = None
 dataclasses._init_fn = dataclasses_init_fn_with_kwargs
 
 # Namespaces
-MYSCHEMA = CurieNamespace('MySchema', 'https://w3id.org/MySchema')
 LINKML = CurieNamespace('linkml', 'https://w3id.org/linkml/')
-DEFAULT_ = MYSCHEMA
+PLAYGROUND = CurieNamespace('playground', 'https://example.com/ess-dive-linkml-playground')
+DEFAULT_ = PLAYGROUND
 
 
 # Types
@@ -47,10 +48,10 @@ class ObservationBasin3dId(extended_str):
 class Observation(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = MYSCHEMA.Observation
-    class_class_curie: ClassVar[str] = "MySchema:Observation"
+    class_class_uri: ClassVar[URIRef] = PLAYGROUND.Observation
+    class_class_curie: ClassVar[str] = "playground:Observation"
     class_name: ClassVar[str] = "Observation"
-    class_model_uri: ClassVar[URIRef] = MYSCHEMA.Observation
+    class_model_uri: ClassVar[URIRef] = PLAYGROUND.Observation
 
     basin3d_id: Union[str, ObservationBasin3dId] = None
     description: Optional[str] = None
@@ -79,10 +80,10 @@ class Observation(YAMLRoot):
 class Container(YAMLRoot):
     _inherited_slots: ClassVar[List[str]] = []
 
-    class_class_uri: ClassVar[URIRef] = MYSCHEMA.Container
-    class_class_curie: ClassVar[str] = "MySchema:Container"
+    class_class_uri: ClassVar[URIRef] = PLAYGROUND.Container
+    class_class_curie: ClassVar[str] = "playground:Container"
     class_name: ClassVar[str] = "Container"
-    class_model_uri: ClassVar[URIRef] = MYSCHEMA.Container
+    class_model_uri: ClassVar[URIRef] = PLAYGROUND.Container
 
     observation_list: Optional[Union[Dict[Union[str, ObservationBasin3dId], Union[dict, Observation]], List[Union[dict, Observation]]]] = empty_dict()
 
@@ -99,17 +100,17 @@ class Container(YAMLRoot):
 class slots:
     pass
 
-slots.basin3d_id = Slot(uri=MYSCHEMA.basin3d_id, name="basin3d_id", curie=MYSCHEMA.curie('basin3d_id'),
-                   model_uri=MYSCHEMA.basin3d_id, domain=None, range=URIRef)
+slots.basin3d_id = Slot(uri=PLAYGROUND.basin3d_id, name="basin3d_id", curie=PLAYGROUND.curie('basin3d_id'),
+                   model_uri=PLAYGROUND.basin3d_id, domain=None, range=URIRef)
 
-slots.description = Slot(uri=MYSCHEMA.description, name="description", curie=MYSCHEMA.curie('description'),
-                   model_uri=MYSCHEMA.description, domain=None, range=Optional[str])
+slots.description = Slot(uri=PLAYGROUND.description, name="description", curie=PLAYGROUND.curie('description'),
+                   model_uri=PLAYGROUND.description, domain=None, range=Optional[str])
 
-slots.categories = Slot(uri=MYSCHEMA.categories, name="categories", curie=MYSCHEMA.curie('categories'),
-                   model_uri=MYSCHEMA.categories, domain=None, range=Optional[str])
+slots.categories = Slot(uri=PLAYGROUND.categories, name="categories", curie=PLAYGROUND.curie('categories'),
+                   model_uri=PLAYGROUND.categories, domain=None, range=Optional[str])
 
-slots.units = Slot(uri=MYSCHEMA.units, name="units", curie=MYSCHEMA.curie('units'),
-                   model_uri=MYSCHEMA.units, domain=None, range=Optional[str])
+slots.units = Slot(uri=PLAYGROUND.units, name="units", curie=PLAYGROUND.curie('units'),
+                   model_uri=PLAYGROUND.units, domain=None, range=Optional[str])
 
-slots.container__observation_list = Slot(uri=MYSCHEMA.observation_list, name="container__observation_list", curie=MYSCHEMA.curie('observation_list'),
-                   model_uri=MYSCHEMA.container__observation_list, domain=None, range=Optional[Union[Dict[Union[str, ObservationBasin3dId], Union[dict, Observation]], List[Union[dict, Observation]]]])
+slots.container__observation_list = Slot(uri=PLAYGROUND.observation_list, name="container__observation_list", curie=PLAYGROUND.curie('observation_list'),
+                   model_uri=PLAYGROUND.container__observation_list, domain=None, range=Optional[Union[Dict[Union[str, ObservationBasin3dId], Union[dict, Observation]], List[Union[dict, Observation]]]])

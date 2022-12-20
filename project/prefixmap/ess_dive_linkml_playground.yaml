@@ -1,4 +1,4 @@
 {
-   "MySchema": "https://w3id.org/MySchema",
-   "linkml": "https://w3id.org/linkml/"
+   "linkml": "https://w3id.org/linkml/",
+   "playground": "https://example.com/ess-dive-linkml-playground"
 }

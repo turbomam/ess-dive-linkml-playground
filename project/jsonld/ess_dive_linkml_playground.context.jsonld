@@ -1,12 +1,12 @@
 {
-   "_comments": "Auto generated from ess_dive_linkml_playground.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-12-19T20:37:10\n    Schema: MySchema\n    metamodel version: 1.7.0\n    model version: None\n    \n    id: https://w3id.org/MySchema\n    description: MySchema\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "_comments": "Auto generated from ess_dive_linkml_playground.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-12-19T20:44:40\n    Schema: ess-dive-linkml-playground\n    metamodel version: 1.7.0\n    model version: None\n    \n    id: https://w3id.org/ess-dive-linkml-playground\n    description: This is a collaborative repo for exploring schema creation and data validation for ESS-DIVE, using LinkML\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
    "@context": {
-      "MySchema": {
-         "@id": "https://w3id.org/MySchema",
+      "linkml": "https://w3id.org/linkml/",
+      "playground": {
+         "@id": "https://example.com/ess-dive-linkml-playground",
          "@prefix": true
       },
-      "linkml": "https://w3id.org/linkml/",
-      "@vocab": "https://w3id.org/MySchema",
+      "@vocab": "https://example.com/ess-dive-linkml-playground",
       "basin3d_id": "@id",
       "observation_list": {
          "@type": "@id"

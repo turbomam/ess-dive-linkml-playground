@@ -1,7 +1,7 @@
 {
-  "name": "MySchema",
-  "description": "MySchema",
-  "id": "https://w3id.org/MySchema",
+  "name": "ess-dive-linkml-playground",
+  "description": "This is a collaborative repo for exploring schema creation and data validation for ESS-DIVE, using LinkML",
+  "id": "https://w3id.org/ess-dive-linkml-playground",
   "imports": [
     "linkml:types"
   ],
@@ -12,11 +12,11 @@
       "prefix_reference": "https://w3id.org/linkml/"
     },
     {
-      "prefix_prefix": "MySchema",
-      "prefix_reference": "https://w3id.org/MySchema"
+      "prefix_prefix": "playground",
+      "prefix_reference": "https://example.com/ess-dive-linkml-playground"
     }
   ],
-  "default_prefix": "MySchema",
+  "default_prefix": "playground",
   "default_range": "string",
   "types": [
     {
@@ -192,15 +192,15 @@
   "slots": [
     {
       "name": "basin3d_id",
-      "definition_uri": "https://w3id.org/MySchemabasin3d_id",
+      "definition_uri": "https://example.com/ess-dive-linkml-playgroundbasin3d_id",
       "examples": [
         {
           "value": "NDVI",
           "@type": "Example"
         }
       ],
-      "from_schema": "https://w3id.org/MySchema",
-      "slot_uri": "https://w3id.org/MySchemabasin3d_id",
+      "from_schema": "https://w3id.org/ess-dive-linkml-playground",
+      "slot_uri": "https://example.com/ess-dive-linkml-playgroundbasin3d_id",
       "identifier": true,
       "owner": "Observation",
       "domain_of": [
@@ -212,15 +212,15 @@
     },
     {
       "name": "description",
-      "definition_uri": "https://w3id.org/MySchemadescription",
+      "definition_uri": "https://example.com/ess-dive-linkml-playgrounddescription",
       "examples": [
         {
           "value": "Normalized Difference Vegetation Index (NDVI)",
           "@type": "Example"
         }
       ],
-      "from_schema": "https://w3id.org/MySchema",
-      "slot_uri": "https://w3id.org/MySchemadescription",
+      "from_schema": "https://w3id.org/ess-dive-linkml-playground",
+      "slot_uri": "https://example.com/ess-dive-linkml-playgrounddescription",
       "owner": "Observation",
       "domain_of": [
         "Observation"
@@ -230,15 +230,15 @@
     },
     {
       "name": "categories",
-      "definition_uri": "https://w3id.org/MySchemacategories",
+      "definition_uri": "https://example.com/ess-dive-linkml-playgroundcategories",
       "examples": [
         {
           "value": "Remote Sensing",
           "@type": "Example"
         }
       ],
-      "from_schema": "https://w3id.org/MySchema",
-      "slot_uri": "https://w3id.org/MySchemacategories",
+      "from_schema": "https://w3id.org/ess-dive-linkml-playground",
+      "slot_uri": "https://example.com/ess-dive-linkml-playgroundcategories",
       "owner": "Observation",
       "domain_of": [
         "Observation"
@@ -248,15 +248,15 @@
     },
     {
       "name": "units",
-      "definition_uri": "https://w3id.org/MySchemaunits",
+      "definition_uri": "https://example.com/ess-dive-linkml-playgroundunits",
       "examples": [
         {
           "value": "m",
           "@type": "Example"
         }
       ],
-      "from_schema": "https://w3id.org/MySchema",
-      "slot_uri": "https://w3id.org/MySchemaunits",
+      "from_schema": "https://w3id.org/ess-dive-linkml-playground",
+      "slot_uri": "https://example.com/ess-dive-linkml-playgroundunits",
       "owner": "Observation",
       "domain_of": [
         "Observation"
@@ -266,8 +266,8 @@
     },
     {
       "name": "container__observation_list",
-      "from_schema": "https://w3id.org/MySchema",
-      "slot_uri": "https://w3id.org/MySchemaobservation_list",
+      "from_schema": "https://w3id.org/ess-dive-linkml-playground",
+      "slot_uri": "https://example.com/ess-dive-linkml-playgroundobservation_list",
       "multivalued": true,
       "alias": "observation_list",
       "owner": "Container",
@@ -283,8 +283,8 @@
   "classes": [
     {
       "name": "Observation",
-      "definition_uri": "https://w3id.org/MySchemaObservation",
-      "from_schema": "https://w3id.org/MySchema",
+      "definition_uri": "https://example.com/ess-dive-linkml-playgroundObservation",
+      "from_schema": "https://w3id.org/ess-dive-linkml-playground",
       "slots": [
         "basin3d_id",
         "description",
@@ -292,13 +292,13 @@
         "units"
       ],
       "slot_usage": {},
-      "class_uri": "https://w3id.org/MySchemaObservation",
+      "class_uri": "https://example.com/ess-dive-linkml-playgroundObservation",
       "@type": "ClassDefinition"
     },
     {
       "name": "Container",
-      "definition_uri": "https://w3id.org/MySchemaContainer",
-      "from_schema": "https://w3id.org/MySchema",
+      "definition_uri": "https://example.com/ess-dive-linkml-playgroundContainer",
+      "from_schema": "https://w3id.org/ess-dive-linkml-playground",
       "slots": [
         "container__observation_list"
       ],
@@ -312,21 +312,21 @@
           "@type": "SlotDefinition"
         }
       ],
-      "class_uri": "https://w3id.org/MySchemaContainer",
+      "class_uri": "https://example.com/ess-dive-linkml-playgroundContainer",
       "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "ess_dive_linkml_playground.yaml",
-  "source_file_date": "2022-12-19T20:36:19",
-  "source_file_size": 781,
-  "generation_date": "2022-12-19T20:37:11",
+  "source_file_date": "2022-12-19T20:44:06",
+  "source_file_size": 961,
+  "generation_date": "2022-12-19T20:44:41",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/ess_dive_linkml_playground.context.jsonld",
     "https://w3id.org/linkml/types.context.jsonld",
     {
-      "@base": "https://w3id.org/MySchema"
+      "@base": "https://example.com/ess-dive-linkml-playground"
     }
   ]
 }

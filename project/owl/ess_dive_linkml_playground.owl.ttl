@@ -1,21 +1,21 @@
 @prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
-@prefix MySchema: <https://w3id.org/MySchema> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix linkml: <https://w3id.org/linkml/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix playground: <https://example.com/ess-dive-linkml-playground> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-MySchema: a owl:Ontology ;
-    rdfs:label "MySchema" ;
-    IAO:0000700 MySchema:Container,
-        MySchema:Observation ;
+<https://w3id.org/ess-dive-linkml-playground> a owl:Ontology ;
+    rdfs:label "ess-dive-linkml-playground" ;
+    IAO:0000700 playground:Container,
+        playground:Observation ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
-    linkml:generation_date "2022-12-19T20:37:14" ;
+    linkml:generation_date "2022-12-19T20:44:44" ;
     linkml:metamodel_version "1.7.0" ;
     linkml:source_file "ess_dive_linkml_playground.yaml" ;
-    linkml:source_file_date "2022-12-19T20:36:19" ;
-    linkml:source_file_size 781 .
+    linkml:source_file_date "2022-12-19T20:44:06" ;
+    linkml:source_file_size 961 .
 
 linkml:SubsetDefinition a owl:Class ;
     rdfs:label "subset_definition" .
@@ -26,37 +26,37 @@ linkml:TypeDefinition a owl:Class ;
 linkml:topValue a owl:DatatypeProperty ;
     rdfs:label "value" .
 
-MySchema:Container a owl:Class,
+playground:Container a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Container" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom MySchema:Observation ;
-            owl:onProperty MySchema:observation_list ] .
+            owl:allValuesFrom playground:Observation ;
+            owl:onProperty playground:observation_list ] .
 
-MySchema:basin3d_id a owl:ObjectProperty,
+playground:basin3d_id a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "basin3d_id" ;
     rdfs:range linkml:String ;
     linkml:examples "Example(value='NDVI', description=None)" .
 
-MySchema:categories a owl:ObjectProperty,
+playground:categories a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "categories" ;
     rdfs:range linkml:String ;
     linkml:examples "Example(value='Remote Sensing', description=None)" .
 
-MySchema:description a owl:ObjectProperty,
+playground:description a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "description" ;
     rdfs:range linkml:String ;
     linkml:examples "Example(value='Normalized Difference Vegetation Index (NDVI)', description=None)" .
 
-MySchema:observation_list a owl:ObjectProperty,
+playground:observation_list a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "observation_list" ;
-    rdfs:range MySchema:Observation .
+    rdfs:range playground:Observation .
 
-MySchema:units a owl:ObjectProperty,
+playground:units a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "units" ;
     rdfs:range linkml:String ;
@@ -65,25 +65,25 @@ MySchema:units a owl:ObjectProperty,
 linkml:ClassDefinition a owl:Class ;
     rdfs:label "class_definition" .
 
-MySchema:Observation a owl:Class,
+playground:Observation a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Observation" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty MySchema:units ],
-        [ a owl:Restriction ;
-            owl:onClass linkml:String ;
-            owl:onProperty MySchema:basin3d_id ;
+            owl:onProperty playground:basin3d_id ;
             owl:qualifiedCardinality 1 ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty MySchema:categories ],
+            owl:onProperty playground:description ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty MySchema:description ] .
+            owl:onProperty playground:units ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty playground:categories ] .
 
 linkml:SlotDefinition a owl:Class ;
     rdfs:label "slot_definition" .

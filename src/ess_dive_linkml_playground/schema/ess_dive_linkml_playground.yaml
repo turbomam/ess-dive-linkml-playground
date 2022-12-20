@@ -1,12 +1,13 @@
-name: MySchema
-description: MySchema
-id: https://w3id.org/MySchema
+name: ess-dive-linkml-playground
+description: This is a collaborative repo for exploring schema creation and data validation for ESS-DIVE, using LinkML
+id: https://w3id.org/ess-dive-linkml-playground
 imports:
   - linkml:types
 prefixes:
   linkml: https://w3id.org/linkml/
-  MySchema: https://w3id.org/MySchema
-default_prefix: MySchema
+  playground: https://example.com/ess-dive-linkml-playground
+default_prefix: playground
+default_range: string
 slots:
   basin3d_id:
     examples:
