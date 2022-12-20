@@ -294,7 +294,7 @@
   "source_file": "ess_dive_linkml_playground.yaml",
   "source_file_date": "2022-12-19T20:18:23",
   "source_file_size": 755,
-  "generation_date": "2022-12-19T20:18:55",
+  "generation_date": "2022-12-19T20:21:09",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/ess_dive_linkml_playground.context.jsonld",

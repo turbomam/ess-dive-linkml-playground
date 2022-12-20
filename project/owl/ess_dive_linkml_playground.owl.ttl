@@ -10,7 +10,7 @@ MySchema: a owl:Ontology ;
     rdfs:label "MySchema" ;
     IAO:0000700 MySchema:Observation ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
-    linkml:generation_date "2022-12-19T20:18:58" ;
+    linkml:generation_date "2022-12-19T20:21:12" ;
     linkml:metamodel_version "1.7.0" ;
     linkml:source_file "ess_dive_linkml_playground.yaml" ;
     linkml:source_file_date "2022-12-19T20:18:23" ;
@@ -33,17 +33,17 @@ MySchema:Observation a owl:Class,
             owl:onClass linkml:String ;
             owl:onProperty MySchema:units ],
         [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty MySchema:description ],
+            owl:onProperty MySchema:basin3d_id ;
+            owl:qualifiedCardinality 1 ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
             owl:onProperty MySchema:categories ],
         [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty MySchema:basin3d_id ;
-            owl:qualifiedCardinality 1 ] .
+            owl:onProperty MySchema:description ] .
 
 MySchema:basin3d_id a owl:ObjectProperty,
         linkml:SlotDefinition ;
