@@ -263,6 +263,21 @@
       ],
       "range": "string",
       "@type": "SlotDefinition"
+    },
+    {
+      "name": "container__observation_list",
+      "from_schema": "https://w3id.org/MySchema",
+      "slot_uri": "https://w3id.org/MySchemaobservation_list",
+      "multivalued": true,
+      "alias": "observation_list",
+      "owner": "Container",
+      "domain_of": [
+        "Container"
+      ],
+      "range": "Observation",
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
     }
   ],
   "classes": [
@@ -278,23 +293,34 @@
       ],
       "slot_usage": {},
       "class_uri": "https://w3id.org/MySchemaObservation",
-      "unique_keys": [
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Container",
+      "definition_uri": "https://w3id.org/MySchemaContainer",
+      "from_schema": "https://w3id.org/MySchema",
+      "slots": [
+        "container__observation_list"
+      ],
+      "slot_usage": {},
+      "attributes": [
         {
-          "unique_key_name": "description_key",
-          "unique_key_slots": [
-            "description"
-          ],
-          "@type": "UniqueKey"
+          "name": "observation_list",
+          "multivalued": true,
+          "range": "Observation",
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
         }
       ],
+      "class_uri": "https://w3id.org/MySchemaContainer",
       "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "ess_dive_linkml_playground.yaml",
-  "source_file_date": "2022-12-19T20:18:23",
-  "source_file_size": 755,
-  "generation_date": "2022-12-19T20:28:52",
+  "source_file_date": "2022-12-19T20:36:19",
+  "source_file_size": 781,
+  "generation_date": "2022-12-19T20:37:11",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/ess_dive_linkml_playground.context.jsonld",

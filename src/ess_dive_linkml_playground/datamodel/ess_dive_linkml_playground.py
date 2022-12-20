@@ -1,5 +1,5 @@
 # Auto generated from ess_dive_linkml_playground.yaml by pythongen.py version: 0.9.0
-# Generation date: 2022-12-19T20:28:57
+# Generation date: 2022-12-19T20:37:16
 # Schema: MySchema
 #
 # id: https://w3id.org/MySchema
@@ -75,6 +75,23 @@ class Observation(YAMLRoot):
         super().__post_init__(**kwargs)
 
 
+@dataclass
+class Container(YAMLRoot):
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = MYSCHEMA.Container
+    class_class_curie: ClassVar[str] = "MySchema:Container"
+    class_name: ClassVar[str] = "Container"
+    class_model_uri: ClassVar[URIRef] = MYSCHEMA.Container
+
+    observation_list: Optional[Union[Dict[Union[str, ObservationBasin3dId], Union[dict, Observation]], List[Union[dict, Observation]]]] = empty_dict()
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        self._normalize_inlined_as_list(slot_name="observation_list", slot_type=Observation, key_name="basin3d_id", keyed=True)
+
+        super().__post_init__(**kwargs)
+
+
 # Enumerations
 
 
@@ -93,3 +110,6 @@ slots.categories = Slot(uri=MYSCHEMA.categories, name="categories", curie=MYSCHE
 
 slots.units = Slot(uri=MYSCHEMA.units, name="units", curie=MYSCHEMA.curie('units'),
                    model_uri=MYSCHEMA.units, domain=None, range=Optional[str])
+
+slots.container__observation_list = Slot(uri=MYSCHEMA.observation_list, name="container__observation_list", curie=MYSCHEMA.curie('observation_list'),
+                   model_uri=MYSCHEMA.container__observation_list, domain=None, range=Optional[Union[Dict[Union[str, ObservationBasin3dId], Union[dict, Observation]], List[Union[dict, Observation]]]])

@@ -34,6 +34,13 @@ linkml:Objectidentifier IRI
 
 linkml:Nodeidentifier NONLITERAL
 
+<https://w3id.org/MySchemaContainer> CLOSED {
+    (  $<https://w3id.org/MySchemaContainer_tes> <https://w3id.org/MySchemaobservation_list>
+       @<https://w3id.org/MySchemaObservation> * ;
+       rdf:type [ <https://w3id.org/MySchemaContainer> ] ?
+    )
+}
+
 <https://w3id.org/MySchemaObservation> CLOSED {
     (  $<https://w3id.org/MySchemaObservation_tes> (  <https://w3id.org/MySchemadescription> @linkml:String ? ;
           <https://w3id.org/MySchemacategories> @linkml:String ? ;

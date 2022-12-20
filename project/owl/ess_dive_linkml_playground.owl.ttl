@@ -8,13 +8,14 @@
 
 MySchema: a owl:Ontology ;
     rdfs:label "MySchema" ;
-    IAO:0000700 MySchema:Observation ;
+    IAO:0000700 MySchema:Container,
+        MySchema:Observation ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
-    linkml:generation_date "2022-12-19T20:28:55" ;
+    linkml:generation_date "2022-12-19T20:37:14" ;
     linkml:metamodel_version "1.7.0" ;
     linkml:source_file "ess_dive_linkml_playground.yaml" ;
-    linkml:source_file_date "2022-12-19T20:18:23" ;
-    linkml:source_file_size 755 .
+    linkml:source_file_date "2022-12-19T20:36:19" ;
+    linkml:source_file_size 781 .
 
 linkml:SubsetDefinition a owl:Class ;
     rdfs:label "subset_definition" .
@@ -25,25 +26,12 @@ linkml:TypeDefinition a owl:Class ;
 linkml:topValue a owl:DatatypeProperty ;
     rdfs:label "value" .
 
-MySchema:Observation a owl:Class,
+MySchema:Container a owl:Class,
         linkml:ClassDefinition ;
-    rdfs:label "Observation" ;
+    rdfs:label "Container" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass linkml:String ;
-            owl:onProperty MySchema:units ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass linkml:String ;
-            owl:onProperty MySchema:description ],
-        [ a owl:Restriction ;
-            owl:onClass linkml:String ;
-            owl:onProperty MySchema:basin3d_id ;
-            owl:qualifiedCardinality 1 ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass linkml:String ;
-            owl:onProperty MySchema:categories ] .
+            owl:allValuesFrom MySchema:Observation ;
+            owl:onProperty MySchema:observation_list ] .
 
 MySchema:basin3d_id a owl:ObjectProperty,
         linkml:SlotDefinition ;
@@ -63,6 +51,11 @@ MySchema:description a owl:ObjectProperty,
     rdfs:range linkml:String ;
     linkml:examples "Example(value='Normalized Difference Vegetation Index (NDVI)', description=None)" .
 
+MySchema:observation_list a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "observation_list" ;
+    rdfs:range MySchema:Observation .
+
 MySchema:units a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "units" ;
@@ -71,6 +64,26 @@ MySchema:units a owl:ObjectProperty,
 
 linkml:ClassDefinition a owl:Class ;
     rdfs:label "class_definition" .
+
+MySchema:Observation a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Observation" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty MySchema:units ],
+        [ a owl:Restriction ;
+            owl:onClass linkml:String ;
+            owl:onProperty MySchema:basin3d_id ;
+            owl:qualifiedCardinality 1 ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty MySchema:categories ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty MySchema:description ] .
 
 linkml:SlotDefinition a owl:Class ;
     rdfs:label "slot_definition" .

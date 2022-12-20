@@ -3,20 +3,29 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+MySchema:Container a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class MySchema:Observation ;
+            sh:nodeKind sh:IRI ;
+            sh:order 0 ;
+            sh:path MySchema:observation_list ] ;
+    sh:targetClass MySchema:Container .
+
 MySchema:Observation a sh:NodeShape ;
     sh:closed true ;
     sh:ignoredProperties ( rdf:type ) ;
     sh:property [ sh:maxCount 1 ;
-            sh:order 0 ;
-            sh:path MySchema:basin3d_id ],
-        [ sh:maxCount 1 ;
-            sh:order 3 ;
-            sh:path MySchema:units ],
+            sh:order 1 ;
+            sh:path MySchema:description ],
         [ sh:maxCount 1 ;
             sh:order 2 ;
             sh:path MySchema:categories ],
         [ sh:maxCount 1 ;
-            sh:order 1 ;
-            sh:path MySchema:description ] ;
+            sh:order 3 ;
+            sh:path MySchema:units ],
+        [ sh:maxCount 1 ;
+            sh:order 0 ;
+            sh:path MySchema:basin3d_id ] ;
     sh:targetClass MySchema:Observation .
 

@@ -1,3 +1,7 @@
+message Container
+ {
+ repeated  observation observationList = 0
+ }
 message Observation
  {
   string basin3dId = 0
