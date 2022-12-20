@@ -1,5 +1,5 @@
 # Auto generated from ess_dive_linkml_playground.yaml by pythongen.py version: 0.9.0
-# Generation date: 2022-12-19T20:21:14
+# Generation date: 2022-12-19T20:22:02
 # Schema: MySchema
 #
 # id: https://w3id.org/MySchema
